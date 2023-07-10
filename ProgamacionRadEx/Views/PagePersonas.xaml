@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProgamacionRadEx.Views.PagePersonas">
+    
+            <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10,10,10,10">
+
+                    <Image x:Name="foto" WidthRequest="80" HeightRequest="200" BackgroundColor="Wheat" />
+
+            <Button x:Name="btnfoto" Text="Capturar imagen" Clicked="btnfoto_Clicked" 
+            TextColor="Black"
+            BorderWidth="3"
+            BorderColor="Black"
+            Margin="60,0,60,0"
+            FontSize="11"
+            BackgroundColor="Wheat" HeightRequest="40"
+            CornerRadius="300" 
+                 />
+
+
+
+            <Label Text="Ingrese sus Nombres"     TextColor="Black"
+                BackgroundColor="White"
+                WidthRequest="250"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>
+            <Entry x:Name="txtNombre" Keyboard="Text"/>
+
+
+            <Label Text="Ingrese sus Apellidos"
+                    TextColor="Black"
+                BackgroundColor="White"
+                WidthRequest="250"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>           
+
+            <Entry x:Name="txtApellido" Keyboard="Text"/>
+
+
+            <Label Text="Ingrese Su edad"    
+                   TextColor="Black"
+                BackgroundColor="White"
+                WidthRequest="250"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>
+            <Entry x:Name="txtEdad" Keyboard="Numeric"/>
+
+            <Label Text="Ingrese Su telefono"    
+                   TextColor="Black"
+                BackgroundColor="White"
+                WidthRequest="250"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>
+            <Entry x:Name="txtTelefono" Keyboard="Numeric"/>
+
+
+
+
+
+            <Picker
+                 x:Name="Pais"  
+    SelectedIndexChanged="Pais_SelectedIndexChanged"   Title=" Seleccione su pais " TitleColor="Blue" TextColor="Black">
+                <Picker.Items>
+
+
+                    <x:String>Honduras(+504)</x:String>
+                    <x:String>Guatemala(+502)</x:String>
+                    <x:String>El salvador(+503)</x:String>
+                    <x:String>Costa Rica(+506)</x:String>
+                    <x:String>Panama(+507)</x:String>
+
+                </Picker.Items>
+            </Picker>
+
+
+
+            <Label Text="Nota" 
+                   TextColor="Black"
+                BackgroundColor="White"
+                WidthRequest="250"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>
+            <Entry x:Name="txtNota" Keyboard="Text"/>
+
+
+
+                <Label Text="Latitud" TextColor="Black"
+                BackgroundColor="White"
+                WidthRequest="250"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>
+                <Entry Placeholder ="latitud" x:Name="txtLatitud" Keyboard="Numeric" IsEnabled="False"/>
+
+                <Label Text="Longitud"
+                   
+                TextColor="Black"
+                BackgroundColor="White"
+                WidthRequest="250"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>
+                <Entry Placeholder ="longitud" x:Name="txtLongitud" Keyboard="Numeric" IsEnabled="False"/>
+
+
+                <Button  x:Name="btSalvarContacto" Text="Salvar Contacto" Clicked="btSalvarContacto_Clicked" 
+                      TextColor="Black"
+            BorderWidth="3"
+            BorderColor="Black"
+            Margin="60,0,60,0"
+            FontSize="11"
+            BackgroundColor="Wheat" HeightRequest="40"
+            CornerRadius="300" />
+
+
+            <Button  x:Name="btVercontactos" Text="Ver contactos" Clicked="btVercontactos_Clicked" 
+                      TextColor="Black"
+            BorderWidth="3"
+            BorderColor="Black"
+            Margin="60,0,60,0"
+            FontSize="11"
+            BackgroundColor="Wheat" HeightRequest="40"
+            CornerRadius="300" />
+              
+
+        </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+

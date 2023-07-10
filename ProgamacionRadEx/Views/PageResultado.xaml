@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProgamacionRadEx.Views.PageResultado">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding Nombre}"
+                   x:Name="lbNombre"/>
+
+
+            <Label Text="{Binding Apellido}"
+                   x:Name="lbApeliido"/>
+
+            <Label Text="{Binding Telefono}"
+                 x:Name="lbTelefono"  />
+
+
+            <Label Text="{Binding Edad}" 
+                   x:Name="lbEdad"/>
+
+            <Label Text="{Binding Nota}" 
+                   x:Name="lbNota"/>
+
+
+            <Label Text="{Binding Latitud}" 
+                   x:Name="lblatitud"/>
+
+            <Label Text="{Binding Longitud}" 
+                   x:Name="lblongitud"/>
+
+
+
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

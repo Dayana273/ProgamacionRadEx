@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProgamacionRadEx.MainPage">
+
+    <StackLayout>
+
+
+        <Image x:Name="foto" WidthRequest="50" HeightRequest="200"/>
+        <Button x:Name="btnfoto" Text="Capturar Imagen" Clicked="btnfoto_Clicked"/>
+
+
+        <Label Text="Ingrese Su Nombre"/>
+        <Entry x:Name="txtNombre" Keyboard="Text"/>
+
+
+        <Label Text="Ingrese Su edad"/>
+        <Entry x:Name="txtEdad" Keyboard="Text"/>
+
+
+
+        <Label Text="Ingrese Su telefono"/>
+        <Entry x:Name="txtTelefono" Keyboard="Numeric"/>
+
+        <Label Text="Nota"/>
+        <Entry x:Name="txtNota" Keyboard="Text"/>
+
+
+
+
+      
+
+
+        <Button x:Name="btSalvarContacto" Text="Salvar Contacto"  Clicked="btSalvarContacto_Clicked"
+                
+                TextColor="Black"
+                BackgroundColor="White"
+                BorderColor="Black"
+                BorderWidth="4"
+                CornerRadius="2" 
+                WidthRequest="300"
+                HeightRequest="60"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                 HorizontalOptions="Center" />
+
+
+        <Button x:Name="btVerAgenda" Text="Ver Agenda"  Clicked="btVerAgenda_Clicked"
+                
+                TextColor="Black"
+                BackgroundColor="White"
+                BorderColor="Black"
+                BorderWidth="4"
+                CornerRadius="2" 
+                WidthRequest="300"
+                HeightRequest="60"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                 HorizontalOptions="Center" />
+
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
